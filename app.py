@@ -6,7 +6,8 @@ from utils import extract_scores, parse_file, build_prompt
 
 # Load API key
 load_dotenv()
-api_key = os.getenv("DEEPSEEK_API_KEY")
+# api_key = os.getenv("DEEPSEEK_API_KEY")
+api_key = st.secrets["DEEPSEEK_API_KEY"]
 
 API_URL = "https://api.deepseek.com/v1/chat/completions"
 
